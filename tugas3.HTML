@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
+
+    <div class="w-full max-w-lg bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8">
+
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-2">
+            📝 My Tasks
+        </h1>
+
+        <p class="text-center text-gray-500 mb-6">
+            Kelola tugas harianmu dengan mudah
+        </p>
+
+        <div class="flex gap-3 mb-6">
+            <input
+                type="text"
+                id="todo-input"
+                placeholder="Tambahkan tugas baru..."
+                class="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            >
+
+            <button
+                id="add-btn"
+                class="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition duration-300 shadow-lg">
+                Add
+            </button>
+        </div>
+
+        <ul id="todo-list" class="space-y-3">
+            <!-- Task akan muncul di sini -->
+        </ul>
+
+    </div>
+
+    <script src="Script2.js"></script>
+
+</body>
+</html>
